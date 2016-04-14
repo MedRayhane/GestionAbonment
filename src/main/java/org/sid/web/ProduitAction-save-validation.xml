@@ -1,0 +1,17 @@
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN"
+ "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+
+<validators>
+	<field name="produit.ref">
+		<field-validator type="requiredstring">
+			<message key="reference.obligatoire" />
+		</field-validator>
+	</field>
+	<field name="produit.designation">
+		<field-validator type="requiredstring">
+			<param name="maxLength">10</param>
+			<param name="minLength">3</param>
+			<message key="designation.obligatoire" />
+		</field-validator>
+	</field>
+</validators>
